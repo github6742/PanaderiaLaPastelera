@@ -29,6 +29,21 @@ a{
   height: 15%;
 }
 
+
+/*
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px; -- aca se puede mostrar diferencia si coloco margin 
+  align-items: center;
+  position: sticky;
+  top: 0;
+   agregamos un z index con numero positivo alto para que quede siempre sobre cualquier contenido 
+  z-index: 100;
+}
+*/
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -37,13 +52,13 @@ header {
   position: sticky; 
   /*position: fixed;*/
   background-color: white;
-  width: 100%;
+  /*width: 100%;*/
   z-index: 100;
   top: 0;
 }
 
 nav {
-  width: 70%;
+  width: 100%;
 }
 
 ul {
@@ -480,7 +495,43 @@ main h2{
 }
 
 
+/* PRECIOS */
 
+.carousel{
+  margin: 2rem 2rem;
+  /*width: fit-content;*/
+  width: auto;
+  /*height: min-content;*/
+}
+
+
+.carousel img {
+  width: 5vw; 
+  height: 50vh;
+ }
+
+
+.precios section {
+    margin: 6px 7px;
+}
+    
+
+.precios h3{
+  padding: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.carouselMenu{
+  color: black;
+  background-color: aliceblue;
+  border-radius: 5%;
+}
+
+.carouselPrecio{
+  color:black;
+  background-color: blanchedalmond;
+  border-radius: 5%;
+}
 
 
 /* CONTACTO */
