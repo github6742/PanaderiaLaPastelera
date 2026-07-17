@@ -101,17 +101,19 @@ main h2{
 }
 
 .menuFooter{
-  /* padding: 50px; */
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display:flex;
-  /* padding: 10px; */
-  margin: 0px 10px 0px 0px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items:self-start
 }
 
 .footerTitle{
-    font-size: 15px;
+    font-size: 1rem;
     font-family: 'Times New Roman', Times, serif;  
+    text-transform: uppercase;
+    text-decoration: solid;
     margin-top: 10px;
     margin-bottom: 10px;
     color: rgb(63,2,2);
@@ -478,15 +480,75 @@ main h2{
 }
 
 
-/*
 
-  list-style: none;
-  padding: 0;
-  margin: 0;
+
+
+/* CONTACTO */
+.formularioContacto .mapa {
+  flex: 1 1 0;
+  /* flex-grow: 1; flex-shrink: 1; flex-basis:0 -->hace que el elemento crezca y se achique segun el espacio que tenga partiendo de base 0, para repartir el ancho/alto de forma equitativa con su hermano flexible.
+ */
+  min-height: 600px;
+  max-width: 50%;
+  
+
+}
+
+.mapa iframe{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.contacto .formularioContacto {
+    display: flex; 
+    margin: 31px auto;
+    padding: 5px;
+    justify-content: center;
+    align-items: stretch;
+    gap: 16px;
+}
+
+.formulario{
+  padding: 25px;
+  background-color: #ea6506d9;
+}
+
+
+
+.formulario form{
+  height: 100%;
+}
+
+.formulario fieldset{
+  padding: 30px;
+  height: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; 
-  align-items: self-start;
-  color: rgb(63,2,2);
+  align-items: center;
+  justify-content: space-evenly;
 }
-  */
+
+input, textarea{
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  border: none
+}
+
+input[type="submit"]{
+  padding: 6px 20px;
+  border-radius: 10px;
+  background: #014f5a;
+  color: white;
+  font-weight: 600;
+  box-shadow: 1px 1px 5px 3px #e8c06b;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus{
+  background-color: coral;
+}
+
+textarea{
+  height: 400px;
+}
