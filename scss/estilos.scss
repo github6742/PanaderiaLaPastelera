@@ -1,0 +1,18 @@
+@use './avanzados/variables';
+@use './base/reset';
+
+@use './componentes/botones';
+@use './componentes/cards';
+@use './componentes/etiquetas';
+
+@use './avanzados/mixin';
+@use './avanzados/extend';
+
+@use './base/base';
+@use './base/header';
+@use './pages/index';
+@use './pages/contacto';
+@use './pages/precios';
+@use './pages/productos';
+@use './pages/sucursales';
+@use './base/footer'; 

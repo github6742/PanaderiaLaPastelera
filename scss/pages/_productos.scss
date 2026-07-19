@@ -1,0 +1,289 @@
+@use "../avanzados/variables" as *;
+@use "../avanzados/mixin" as *;
+@use "../avanzados/extend" as *;
+
+.productos h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  //  color: rgb(63, 2, 2);
+  color: $color-primario;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.gridProductosLunchs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "servicios_lunch_10_personas promo_50_triples_mas_picada servicio_lunch_para_5_6_personas servicio_lunch_para_20_personas";
+  width: 80vw;
+  height: 25vh;
+  margin: 0 auto;
+  gap: 10px;
+  position: relative;
+  background-color: #a78e9dd4;
+  padding: 7px;
+}
+
+.gridProductosLunchs img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 0; /*  Permite que se reduzca si es necesario y ayuda a que las imagenes se vean siempre bien*/
+}
+
+.gridProductosLunchs .servicios_lunch_10_personas {
+  grid-area: servicios_lunch_10_personas;
+}
+
+.gridProductosLunchs .promo_50_triples_mas_picada {
+  grid-area: promo_50_triples_mas_picada;
+}
+
+.gridProductosLunchs .servicio_lunch_para_5_6_personas {
+  grid-area: servicio_lunch_para_5_6_personas;
+}
+
+.gridProductosLunchs .servicio_lunch_para_20_personas {
+  grid-area: servicio_lunch_para_20_personas;
+}
+
+.productos .boxs div img {
+  width: 100%;
+}
+
+/*** grid lineas ***/
+
+.boxs .boxsGridLines {
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr) minmax(300px, 2fr);
+  grid-template-rows: repeat(3, 1fr); */
+  grid-template-columns: repeat(5, 1rf);
+  grid-template-rows: repeat(3, 1rf);
+
+@extend %medidas-grid;
+
+  //width: 80vw;
+  //margin: 0 auto;
+  gap: 10px;
+  background-color: #a78e9dd4;
+  justify-items: center;
+  padding: 10px;
+}
+
+.boxs .boxsGridLines .card.boxSalada {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.boxs .boxsGridLines .card.box_tabla_quesos_fiambres {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.boxs .boxsGridLines .card.box_compartir {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.boxs .boxsGridLines .card.box_dulces {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.boxs .boxsGridLines .card.box_premium_lunch_ {
+  grid-column: 1/2;
+  grid-row: 2/2;
+}
+
+.boxs .boxsGridLines .card.box_veggie_lunch {
+  grid-column: 2/3;
+  grid-row: 2/2;
+}
+
+.boxs .boxsGridLines .card.box_4_mini_cakes {
+  grid-column: 3/4;
+  grid-row: 2/2;
+}
+
+.boxs .boxsGridLines .card.box_mini_bagels {
+  grid-column: 4/5;
+  grid-row: 2/2;
+}
+
+.productos .bocaditosLunch div img {
+  width: 100%;
+}
+
+.bocaditosLunch .bocaditosLunchGridLines {
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr) minmax(300px, 2fr);
+  grid-template-rows: repeat(3, 1fr); */
+  grid-template-columns: repeat(5, 1rf);
+  grid-template-rows: repeat(3, 1rf);
+
+  @extend %medidas-grid;
+
+//  width: 80vw;
+//  margin: 0 auto;
+  gap: 10px;
+  background-color: #a78e9dd4;
+  justify-items: center;
+  padding: 10px;
+}
+
+.bocaditosLunch .bocaditosLunchGridLines .card.fosforito_jamon_queso {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.bocaditosLunch .bocaditosLunchGridLines .card.pancito_crudo_rucula_parmesano {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.bocaditosLunch .bocaditosLunchGridLines .card.pan_cheddar_pollo {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.bocaditosLunch .bocaditosLunchGridLines .card.chips_brioche {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.bocaditosLunch .bocaditosLunchGridLines .card.empanaditas {
+  grid-column: 1/2;
+  grid-row: 2/2;
+}
+
+.bocaditosLunch .bocaditosLunchGridLines .card.mediaslunas_jamon_queso {
+  grid-column: 2/3;
+  grid-row: 2/2;
+}
+
+.bocaditosLunch .bocaditosLunchGridLines .card.canastitas_soufle_surtidas {
+  grid-column: 3/4;
+  grid-row: 2/2;
+}
+
+.bocaditosLunch .bocaditosLunchGridLines .card.triangulos_pollo_champiniong {
+  grid-column: 4/5;
+  grid-row: 2/2;
+}
+
+.productos .sandMiga div img {
+  width: 100%;
+}
+
+.sandMiga .sandMigaGridLines {
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr) minmax(300px, 2fr);
+  grid-template-rows: repeat(3, 1fr); */
+  grid-template-columns: repeat(5, 1rf);
+  grid-template-rows: repeat(2, 1rf);
+
+  @extend %medidas-grid;
+  //width: 80vw;
+  //margin: 0 auto;
+  gap: 10px;
+  background-color: #a78e9dd4;
+  justify-items: center;
+  padding: 10px;
+}
+
+.sandMiga .sandMigaGridLines .card.triples_tradicionales_24 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.sandMiga .sandMigaGridLines .card.triples_jamon_queso_24 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.sandMiga .sandMigaGridLines .card.triples_jamon_queso_50 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.sandMiga .sandMigaGridLines .card.triples_tradicionales_eleccion {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.productos .tortas div img {
+  width: 100%;
+}
+
+.tortas .tortasGridLines {
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr) minmax(300px, 2fr);
+  grid-template-rows: repeat(3, 1fr); */
+  grid-template-columns: repeat(5, 1rf);
+  grid-template-rows: repeat(2, 1rf);
+  width: 80vw;
+  margin: 0 auto;
+  gap: 10px;
+  background-color: #a78e9dd4;
+  justify-items: center;
+  padding: 10px;
+}
+
+.tortas .tortasGridLines .card.torta_bonobon {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.tortas .tortasGridLines .card.torta_mouse_nutella {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.tortas .tortasGridLines .card.torta_garoto {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.tortas .tortasGridLines .card.torta_africana {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.productos .panaderia div img {
+  width: 100%;
+}
+
+.panaderia .panaderiaGridLines {
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr) minmax(300px, 2fr);
+  grid-template-rows: repeat(3, 1fr); */
+  grid-template-columns: repeat(5, 1rf);
+  grid-template-rows: repeat(2, 1rf);
+  @extend %medidas-grid;
+  //width: 80vw;
+  //margin: 0 auto;
+  gap: 10px;
+  background-color: #a78e9dd4;
+  justify-items: center;
+  padding: 10px;
+}
+
+.panaderia .panaderiaGridLines .card.masas_secas {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.pananderia .panaderiaGridLines .card.mediaslunas_manteca {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.panaderia .panaderiaGridLines .card.baguetin_precocido {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.panaderia .panaderiaGridLines .card.cookies_rellenas {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}

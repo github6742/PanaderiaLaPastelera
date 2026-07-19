@@ -1,0 +1,10 @@
+@use "../avanzados/variables" as *;
+@use "../avanzados/mixin" as *;
+@use "../avanzados/extend" as *;
+
+
+.colorContacto{
+//  background-color: rgb(63,2,2);
+  background-color: $color-primario;
+}
+

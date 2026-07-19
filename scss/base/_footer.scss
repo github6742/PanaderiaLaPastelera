@@ -1,0 +1,63 @@
+@use "../avanzados/variables" as *;
+@use "../avanzados/mixin" as *;
+@use "../avanzados/extend" as *;
+
+.footerDivGlobal {
+  //display: flex;
+  //justify-content: space-around;
+  //align-items: center;
+  //align-items: flex-start;
+
+  @include flex(space-around, center);
+
+  .footerTitle {
+    font-size: 1rem;
+    font-family: "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    text-decoration: solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(63, 2, 2);
+  }
+
+  .footerListaContacto {
+    //display: flex;
+    //justify-content: space-around;
+    //align-items: center;
+
+    @include flex(space-around, flex-start);
+    
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: rgb(63, 2, 2);
+
+    .fa-brands,
+    .fa-solid {
+      font-size: 15px;
+      color: rgb(165, 42, 42);
+    }
+  }
+
+  .menuFooter {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+  }
+}
+
+.copy {
+  font-size: 25px;
+  text-align: center;
+  color: rgb(63, 2, 2);
+}
+
+.copyComentario {
+  font-size: 15px;
+  text-align: center;
+  color: rgb(63, 2, 2);
+}

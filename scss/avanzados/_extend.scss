@@ -1,0 +1,11 @@
+@use './variables' as *;
+
+%contenedor-centrado{
+    max-width: 1200px;
+    margin: 0 auto;  
+}
+
+%medidas-grid{
+    width: 80vw;
+    margin: 0 auto;
+}

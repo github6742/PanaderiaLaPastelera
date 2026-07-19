@@ -1,0 +1,32 @@
+@use "../avanzados/variables" as *;
+@use "../avanzados/mixin" as *;
+@use "../avanzados/extend" as *;
+
+/* main, de sucursales */
+
+.sucursales {
+  //  display: flex;
+  //  justify-content: initial;
+  //  align-items: center;
+
+  @include flex(initial, center);
+
+  flex-direction: column;
+  padding: 2rem;
+  margin: 2rem;
+  h4 {
+    color: #ff0000;
+    padding: 5px;
+
+    h5 {
+      color: rgb(88, 24, 51);
+      padding: 5px;
+      text-align: center;
+    }
+    h6 {
+      color: rgb(21, 8, 51);
+      padding: 5px;
+      text-align: center;
+    }
+  }
+}

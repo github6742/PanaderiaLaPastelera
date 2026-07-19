@@ -1,0 +1,41 @@
+@use "../avanzados/variables" as *;
+@use "../avanzados/mixin" as *;
+@use "../avanzados/extend" as *;
+
+
+
+.carousel{
+  margin: 2rem 2rem;
+  /*width: fit-content;*/
+  width: auto;
+  /*height: min-content;*/
+}
+
+
+.carousel img {
+  width: 5vw; 
+  height: 50vh;
+ }
+
+
+.precios section {
+    margin: 6px 7px;
+}
+    
+
+.precios h3{
+  padding: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.carouselMenu{
+  color: black;
+  background-color: aliceblue;
+  border-radius: 5%;
+}
+
+.carouselPrecio{
+  color:black;
+  background-color: blanchedalmond;
+  border-radius: 5%;
+}

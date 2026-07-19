@@ -1,0 +1,37 @@
+@use "../avanzados/variables" as *;
+@use "../avanzados/mixin" as *;
+@use "../avanzados/extend" as *;
+
+/* main, de index */
+#fondoPrincipal {
+  background-color: black;
+
+  .heroSection {
+    background-image: url(../assets/img/fondo_01.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    //display: flex;
+    //align-items: center;
+    //justify-content: flex-end;
+
+    @include flex(flex-end, center);
+
+
+
+    .heroTxt {
+      font-size: 50px;
+      font-weight: 600px;
+      font-style: italic;
+      //color: rgba(27, 2, 1, 0.925);
+      color: $color-hero-txt;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      width: 75%;
+      padding: 25px;
+      margin-right: 20px;
+      text-align: center;
+      text-justify: center;
+    }
+  }
+}
