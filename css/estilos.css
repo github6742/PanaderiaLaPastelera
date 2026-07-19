@@ -404,6 +404,30 @@ main h2 {
   grid-row: 1/2;
 }
 
+.transformaciones img.translate:hover {
+  transform: translate(20px, 30px);
+  transition: transform 3s ease-in-out 5ms;
+}
+.transformaciones img.rotate {
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  transition-delay: 10ms;
+}
+.transformaciones img.rotate:hover {
+  transform: rotate(90deg);
+}
+.transformaciones img.scale:hover {
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  transition-delay: 10ms;
+  transform: scale(1.1, 1.1);
+}
+.transformaciones img.skew:hover {
+  transform: skew(5deg, 10deg);
+}
+
 /* main, de sucursales */
 .sucursales {
   display: flex;

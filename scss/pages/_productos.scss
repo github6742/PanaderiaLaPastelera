@@ -60,7 +60,7 @@
   grid-template-columns: repeat(5, 1rf);
   grid-template-rows: repeat(3, 1rf);
 
-@extend %medidas-grid;
+  @extend %medidas-grid;
 
   //width: 80vw;
   //margin: 0 auto;
@@ -123,8 +123,8 @@
 
   @extend %medidas-grid;
 
-//  width: 80vw;
-//  margin: 0 auto;
+  //  width: 80vw;
+  //  margin: 0 auto;
   gap: 10px;
   background-color: #a78e9dd4;
   justify-items: center;
@@ -286,4 +286,39 @@
 .panaderia .panaderiaGridLines .card.cookies_rellenas {
   grid-column: 4/5;
   grid-row: 1/2;
+}
+
+.transformaciones {
+  img {
+    &.translate {
+      &:hover {
+        transform: translate(20px, 30px);
+        //si se coloca transition en el hover salta al regreso
+        transition: transform 3s ease-in-out 5ms;
+      }
+    }
+
+    &.rotate {
+      transition-property: transform;
+      transition-duration: 2s;
+      transition-timing-function: ease-out;
+      transition-delay: 10ms;
+
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+
+    &.scale:hover {
+      transition-property: transform;
+      transition-duration: 2s;
+      transition-timing-function: ease-out;
+      transition-delay: 10ms;
+      transform: scale(1.1, 1.1);
+    }
+
+    &.skew:hover {
+      transform: skew(5deg, 10deg);
+    }
+  }
 }
