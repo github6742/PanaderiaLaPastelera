@@ -68,20 +68,24 @@ main h1 {
 }
 
 @media screen and (max-width: 1023px) {
+  header nav.navDesktop {
+    display: block;
+  }
+
+  header nav.navMobile {
+    display: none;
+  }
+
   li > a {
-    color: rgba(170, 2, 2);
-    text-decoration-line:overline underline;
-    font-size: 20px;
+    color: rgb(184, 104, 104);
+    // text-decoration-line: overline underline;
+    font-size: 30px;
   }
   header {
     // flex-direction: column;
     gap: 40px;
     padding: 40px;
     background-color: rgb(245, 245, 245);
-  }
-
-  header nav.navMobile {
-    display: none;
   }
 
   nav {
