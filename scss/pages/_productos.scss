@@ -322,3 +322,20 @@
     }
   }
 }
+
+
+
+@media screen and (max-width: 1023px) {
+ 
+   h4.descProd {
+     font-size: 20px;
+   }
+}
+
+
+@media screen and (max-width: 768px) {
+ 
+   h4.descProd {
+     font-size: 10px;
+   }
+}

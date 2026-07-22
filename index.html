@@ -31,12 +31,12 @@
   </head>
   <body>
     <header>
-      <div class="logo">
+      <div class="logo navDesktop navTablet">
         <a href="#">
           <img src="./assets/img/panaderia.01.webp" alt="logo La Pastelera" />
         </a>
       </div>
-      <nav>
+      <nav class="navDesktop navTablet">
         <ul>
           <li><a href="./index.html">INICIO</a></li>
           <li><a href="./pages/productos.html">PRODUCTOS</a></li>
@@ -44,6 +44,69 @@
           <li><a href="./pages/precios.html">PRECIOS</a></li>
           <li><a href="./pages/contacto.html">CONTACTO</a></li>
         </ul>
+      </nav>
+
+      <nav class="navbar bg-body-tertiary fixed-top navMobile">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="../index.html">
+            <img src="./assets/img/panaderia.01.webp" alt="logo panaderia" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
+                    >INICIO</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/productos.html"
+                    >PRODUCTOS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/sucursales.html"
+                    >SUCURSALES</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/precios.html">PRECIOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     <main id="fondoPrincipal">

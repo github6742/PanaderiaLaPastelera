@@ -50,6 +50,10 @@ nav {
   width: 100%;
 }
 
+header nav.navMobile {
+  display: none;
+}
+
 ul {
   display: flex;
   justify-content: space-around;
@@ -63,6 +67,55 @@ main h1 {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1023px) {
+  li > a {
+    color: rgb(170, 2, 2);
+    text-decoration-line: overline underline;
+    font-size: 20px;
+  }
+  header {
+    gap: 40px;
+    padding: 40px;
+    background-color: rgb(245, 245, 245);
+  }
+  header nav.navMobile {
+    display: none;
+  }
+  nav {
+    width: 100%;
+  }
+  main h1 {
+    text-align: center;
+    padding: 10px;
+    /* color: rgb(2, 63, 7); */
+    text-transform: uppercase;
+    background-color: white;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ff0000;
+  }
+  header nav.navDesktop {
+    display: none;
+  }
+  header nav.navMobile {
+    display: block;
+  }
+  nav {
+    width: 100%;
+  }
+  main h1 {
+    text-align: center;
+    padding: 10px;
+    /* color: rgb(2, 63, 7); */
+    text-transform: uppercase;
+    background-color: white;
+  }
+}
 .logo {
   width: 128px;
 }
@@ -72,7 +125,6 @@ main h1 {
   height: 15%;
 }
 
-/* main, de index */
 #fondoPrincipal {
   background-color: white;
 }
@@ -99,6 +151,21 @@ main h1 {
   text-justify: center;
 }
 
+@media screen and (max-width: 768px) {
+  #fondoPrincipal {
+    background-color: rgb(218, 11, 11);
+  }
+  #fondoPrincipal .heroSection {
+    height: 45vh;
+    justify-content: center;
+    background-attachment: scroll;
+  }
+  #fondoPrincipal .heroSection .heroTxt {
+    font-size: 24px;
+    width: 95%;
+    padding: 15px;
+  }
+}
 .colorContacto {
   background-color: rgb(63, 2, 2);
 }
@@ -428,6 +495,16 @@ main h1 {
   transform: skew(5deg, 10deg);
 }
 
+@media screen and (max-width: 1023px) {
+  h4.descProd {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h4.descProd {
+    font-size: 10px;
+  }
+}
 /* main, de sucursales */
 .sucursales {
   display: flex;
